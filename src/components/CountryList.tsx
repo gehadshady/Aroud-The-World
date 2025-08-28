@@ -1,16 +1,3 @@
-// import CountryCard from "./CountryCard";
-// import type { Country } from "../App";
-
-// export default function CountryList({ countries }: { countries: Country[] }) {
-//   return (
-//     <div className="my-5 grid grid-cols-1 justify-between justify-items-center gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-//       {countries.map((country) => (
-//         <CountryCard key={country.id} country={country} />
-//       ))}
-//     </div>
-//   );
-// }
-
 import CountryCard from "./CountryCard";
 import type { Country } from "../App";
 

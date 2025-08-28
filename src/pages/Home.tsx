@@ -7,9 +7,10 @@ import useFetchData from "../useFetchData";
 export default function Home() {
   const { loading, error, countries, filteredCountries, setFilteredCountries } =
     useFetchData(
-      "/api/v3.1/all?fields=cca3,name,population,region,capital,flags",
+      "https://restcountries.com/v3.1/all?fields=cca3,name,population,region,capital,flags",
       "multiple",
     );
+
   return (
     <>
       {loading && <ShowMessage message={"Loading..."} />}
