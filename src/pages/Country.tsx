@@ -78,7 +78,7 @@ export default function Country() {
               </defs>
             </svg>
           </Link>
-          <div className="lg:gap-30 grid gap-11 lg:grid-cols-2">
+          <div className="lg:gap-30 grid gap-11 pb-10 lg:grid-cols-2">
             <img
               className="mb-4 h-[400px] w-[560px] rounded-md object-cover"
               src={country.flag}
