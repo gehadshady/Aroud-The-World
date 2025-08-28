@@ -80,46 +80,46 @@ export default function Country() {
           </Link>
           <div className="lg:gap-30 grid gap-11 pb-10 lg:grid-cols-2">
             <img
-              className="mb-4 h-[400px] w-[560px] rounded-md object-cover"
+              className="mx-auto h-[230px] w-[320px] rounded-md object-cover md:mb-2 md:h-[400px] md:w-[560px]"
               src={country.flag}
               alt=""
             />
             <div className="mt-8 text-left">
-              <h1 className="mb-3 text-3xl font-extrabold lg:mb-4">
+              <h1 className="mb-8 text-3xl font-extrabold md:mb-3 lg:mb-4">
                 {country.name}
               </h1>
-              <div className="flex flex-col items-start justify-start gap-3 lg:flex-row lg:gap-20">
+              <div className="flex flex-col items-start justify-start gap-4 lg:flex-row lg:gap-20">
                 <div className="flex-1">
-                  <p className="mb-2">
+                  <p className="mb-4 md:mb-2">
                     <span className="font-semibold">Native Name: </span>
                     <span className="font-light">{country.name}</span>
                   </p>
-                  <p className="mb-2">
+                  <p className="mb-4 md:mb-2">
                     <span className="font-semibold">Population: </span>
                     <span className="font-light">{country.population}</span>
                   </p>
 
-                  <p className="mb-2">
+                  <p className="mb-4 md:mb-2">
                     <span className="font-semibold">Region: </span>
                     <span className="font-light">{country.region}</span>
                   </p>
 
-                  <p className="mb-2">
+                  <p className="mb-4 md:mb-2">
                     <span className="font-semibold">Capital: </span>
                     <span className="font-light">{country.capital}</span>
                   </p>
                 </div>
                 <div className="flex-1">
-                  <p className="mb-2">
+                  <p className="mb-4 md:mb-2">
                     <span className="font-semibold">Top Level Domain:</span>
                     <span className="font-light">{country.tld}</span>
                   </p>
-                  <p className="mb-2">
+                  <p className="mb-4 md:mb-2">
                     <span className="font-semibold">Currencies: </span>
                     <span className="font-light">{country.currencies}</span>
                   </p>
 
-                  <p className="mb-2">
+                  <p className="mb-4 md:mb-2">
                     <span className="font-semibold">Languages: </span>
                     <span className="font-light">{country.languages}</span>
                   </p>
