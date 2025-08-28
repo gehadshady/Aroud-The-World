@@ -36,7 +36,6 @@ export default function useFetchData(url: string, type: FetchType) {
         throw new Error("Failed to fetch");
       }
       const data = await response.json();
-      console.log(data);
 
       if (type === "single") {
         setCountry(mapApiCountry(data));
@@ -47,7 +46,7 @@ export default function useFetchData(url: string, type: FetchType) {
         localStorage.setItem("countries", JSON.stringify(mappedCountries));
       }
     } catch (error) {
-      console.error(error);
+      console.error("Fetch error:", error);
       setError("Failed to fetch data");
     } finally {
       setLoading(false);
