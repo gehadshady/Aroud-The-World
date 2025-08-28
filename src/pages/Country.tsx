@@ -5,7 +5,7 @@ import ShowMessage from "../components/ShowMessage";
 export default function Country() {
   const { countryId } = useParams<{ countryId: string }>();
   const { loading, error, country } = useFetchData(
-    `/api/v3.1/alpha/${countryId}?fields=cca3,name,population,region,subregion,capital,flags,tld,currencies,languages`,
+    `https://restcountries.com/v3.1/alpha/${countryId}?fields=cca3,name,population,region,subregion,capital,flags,tld,currencies,languages`,
     "single",
   );
 
